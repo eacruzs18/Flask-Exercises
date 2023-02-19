@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+ 
+{% block head %}
+<title>Even/odd calculator</title>
+{% endblock %}
+
+{% block body %}
+<h1>Home!</h1>
+<p>Enter an integer to find if it is even or odd.</p>
+<form method="GET" action="{{ url_for('result') }}">
+    <label>Number:</label><br>
+    <input type="text" name="number"><br>
+    <input type="Submit" value="Submit"> 
+</form>
+{% endblock %}
