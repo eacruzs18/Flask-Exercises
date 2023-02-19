@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Registered Students</title>
+{% endblock %}
+
+{% block body %}
+  <h1>Registered Students</h1>
+  <p>The following students have registered for student organizations.</p>
+  <ul>
+    <h1>Name - Organization</h1>
+    {% for name, organization in users.items() %}
+      
+      <li>{{ name }} - {{ organization }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

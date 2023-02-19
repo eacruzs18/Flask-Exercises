@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Registration Form</title>
+{% endblock %}
+
+{% block body %}
+    {% if error %}
+      <p style="color: rgb(227, 255, 19);">{{ error }}</p>
+    {% endif %}
+    <form method="POST">
+      <p>Use the following form to register for a student organization.</p>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="organization">Organization:</label><br>
+      <select id="organization" name="organization">
+        {% for org in organizations %}
+          <option value="{{ org }}">{{ org }}</option>
+        {% endfor %}
+      </select><br>
+      <button type="submit">Register</button>
+    </form>
+{% endblock %}

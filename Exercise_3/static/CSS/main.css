@@ -1,0 +1,36 @@
+body
+{
+    background-color: black;
+    margin: 60px;
+    text-align: left;
+    font-size: 30px;
+    color: azure;
+}
+p
+{
+    color: azure;
+    text-align: left;
+    font-size: 20px;
+}
+
+h1
+{
+    color: azure;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+form 
+{
+    color: white;
+    font-size: 20px;
+    
+}
+nav
+{
+    background-color: rgb(127, 172, 60);
+    margin: 0;
+    padding: 8px;
+    display: block;
+}
